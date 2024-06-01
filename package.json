@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@okta/okta-react": "^6.4.3",
-    "@okta/okta-signin-widget": "^6.3.3"
-  }
-}
