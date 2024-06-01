@@ -1,6 +1,8 @@
 import { useOktaAuth } from "@okta/okta-react";
 import { useEffect, useState } from "react";
 import BookModel from "../../Models/BookModel";
+import ReviewModel from "../../Models/ReviewModel";
+import ReviewRequestModel from "../../Models/ReviewRequestModel";
 import { SpinnerLoading } from "../Utils/SpinnerLoading";
 import { StarsReview } from "../Utils/StarsReview";
 import { CheckoutAndReviewBox } from "./Components/CheckoutAndReviewBox";
@@ -86,6 +88,7 @@ export const BookCheckoutPage = () => {
                 weightedStarReviews = weightedStarReviews + responseData[key].rating;
             }
 
+            //Calculating reviews
             if (loadedReviews) {
                 const round = (Math.round((weightedStarReviews / loadedReviews.length) * 2) / 2).toFixed(1);
                 setTotalStars(Number(round));
