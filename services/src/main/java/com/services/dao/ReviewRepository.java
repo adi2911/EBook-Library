@@ -1,11 +1,11 @@
-package com.services.services.dao;
+package com.services.dao;
 
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties.Pageable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.services.services.entity.Review;
+import com.services.entity.Review;
 
 public interface ReviewRepository extends JpaRepository<Review, Long> {
 

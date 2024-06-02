@@ -5,7 +5,7 @@
             "name": "Spring Boot-ServicesApplication<services>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.services.services.ServicesApplication",
+            "mainClass": "com.services.ServicesApplication",
             "projectName": "services",
             "args": "",
             "envFile": "${workspaceFolder}/.env"

@@ -1,4 +1,4 @@
-package com.services.services.config;
+package com.services.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
@@ -6,8 +6,8 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
-import com.services.services.entity.Book;
-import com.services.services.entity.Review;
+import com.services.entity.Book;
+import com.services.entity.Review;
 
 @Configuration
 public class MyDataRestConfig implements RepositoryRestConfigurer {
